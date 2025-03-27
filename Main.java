@@ -45,23 +45,23 @@ public class Main {
         Zamowienie zamowienie1 = sklep.utworzZamowienie(klient1, produktyZamowienia1, ilosciZamowienia1);
         zamowienie1.zastosujZnizke(); // Zastosuj zniżkę dla stałego klienta
         sklep.aktualizujStanMagazynowy(zamowienie1);
-// Wyświetlamy informacje
-        System.out.println("Informacje o zamówieniu:");
-        zamowienie1.wyswietlSzczegoly();
-        System.out.println("\nStan magazynowy po zamówieniu:");
-        sklep.wyswietlProduktyWKategorii("Laptop");
-        sklep.wyswietlProduktyWKategorii("Mysz");
-// Zmiana statusu zamówienia
-        sklep.zmienStatusZamowienia(zamowienie1.getId(), "Zrealizowane");
-        System.out.println("\nStatus zamówienia po aktualizacji:");
-        zamowienie1.wyswietlSzczegoly();
-// Dodanie kolejnego zamówienia
-        Produkt[] produktyZamowienia2 = {produkt3, produkt2};
-        int[] ilosciZamowienia2 = {2, 1};
-        Zamowienie zamowienie2 = sklep.utworzZamowienie(klient2, produktyZamowienia2, ilosciZamowienia2);
-        sklep.aktualizujStanMagazynowy(zamowienie2);
-// Wyświetlanie zamówień klienta
-        System.out.println("\nZamówienia klienta Jan Kowalski:");
-        sklep.wyswietlZamowieniaKlienta(1);
+//// Wyświetlamy informacje
+//        System.out.println("Informacje o zamówieniu:");
+//        zamowienie1.wyswietlSzczegoly();
+//        System.out.println("\nStan magazynowy po zamówieniu:");
+//        sklep.wyswietlProduktyWKategorii("Laptop");
+//        sklep.wyswietlProduktyWKategorii("Mysz");
+//// Zmiana statusu zamówienia
+//        sklep.zmienStatusZamowienia(zamowienie1.getId(), "Zrealizowane");
+//        System.out.println("\nStatus zamówienia po aktualizacji:");
+//        zamowienie1.wyswietlSzczegoly();
+//// Dodanie kolejnego zamówienia
+//        Produkt[] produktyZamowienia2 = {produkt3, produkt2};
+//        int[] ilosciZamowienia2 = {2, 1};
+//        Zamowienie zamowienie2 = sklep.utworzZamowienie(klient2, produktyZamowienia2, ilosciZamowienia2);
+//        sklep.aktualizujStanMagazynowy(zamowienie2);
+//// Wyświetlanie zamówień klienta
+//        System.out.println("\nZamówienia klienta Jan Kowalski:");
+//        sklep.wyswietlZamowieniaKlienta(1);
     }
 }

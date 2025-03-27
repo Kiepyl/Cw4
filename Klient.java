@@ -1,24 +1,24 @@
 public class Klient {
     private int id;
-    private String name;
-    private String surname;
+    private String imie;
+    private String nazwisko;
     private String email;
-    private boolean regularClient;
+    private boolean czyStaly;
 
     public Klient() {
         this.id = id;
-        this.name = name;
-        this.surname = surname;
+        this.imie = imie;
+        this.nazwisko = nazwisko;
         this.email = email;
-        this.regularClient = regularClient;
+        this.czyStaly = czyStaly;
     }
 
     public void klientInfo(){
         System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Surname: " + surname);
+        System.out.println("Name: " + imie);
+        System.out.println("Surname: " + nazwisko);
         System.out.println("Email: " + email);
-        System.out.println("Regular Client: " + regularClient);
+        System.out.println("Regular Client: " + czyStaly);
     }
 
     public void setId(int id){
@@ -28,18 +28,18 @@ public class Klient {
         return id;
     }
 
-    public void setName(String name){
-        this.name = name;
+    public void setImie(String imie){
+        this.imie = imie;
     }
     public String getName(){
-        return name;
+        return imie;
     }
 
-    public void setSurname(String surname){
-        this.surname = surname;
+    public void setNazwisko(String nazwisko){
+        this.nazwisko = nazwisko;
     }
-    public String getSurname(){
-        return surname;
+    public String getNazwisko(){
+        return nazwisko;
     }
 
     public void setEmail(String email){
@@ -49,10 +49,10 @@ public class Klient {
         return email;
     }
 
-    public void setRegularClient(boolean regularClient){
-        this.regularClient = regularClient;
+    public void setCzyStaly(boolean czyStaly){
+        this.czyStaly = czyStaly;
     }
-    public boolean getRegularClient(){
-        return regularClient;
+    public boolean getczyStaly(){
+        return czyStaly;
     }
 }

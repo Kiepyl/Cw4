@@ -6,4 +6,15 @@ public class SklepKomputerowy {
     private ArrayList<Zamowienie> zamowienia = new ArrayList<>();
     private int liczbaProduktow, liczbaKlientow, liczbaZamowien;
 
+    public void dodajProdukt(Produkt produkt){
+        produkty.add(produkt);
+    }
+
+    public void dodajKlienta(Klient klient){
+        klienci.add(klient);
+    }
+
+    public void utworzZamowienie(Klient klient, Produkt produkty, int[] ilosc){
+
+    }
 }
