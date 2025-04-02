@@ -15,6 +15,11 @@ public class SklepKomputerowy {
     }
 
     public void utworzZamowienie(Klient klient, Produkt produkty, int[] ilosc){
+        zamowienia.add(new Zamowienie());
+        Zamowienie.setKlient(klient);
+    }
+
+    public void zastosujZnizke(){
 
     }
 }
