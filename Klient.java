@@ -6,11 +6,6 @@ public class Klient {
     private boolean czyStaly;
 
     public Klient() {
-        this.id = id;
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.email = email;
-        this.czyStaly = czyStaly;
     }
 
     public void klientInfo(){

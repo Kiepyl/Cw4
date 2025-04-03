@@ -26,45 +26,51 @@ public class Zamowienie {
         System.out.println(status);
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
-    public int getId() {
-        return id;
+
+    public Klient getKlient() {
+        return klient;
     }
 
     public void setKlient(Klient klient) {
         this.klient = klient;
     }
-    public Klient getKlient() {
-        return klient;
+
+    public Produkt[] getProdukty() {
+        return produkty;
     }
 
     public void setProdukty(Produkt[] produkty) {
         this.produkty = produkty;
     }
-    public Produkt[] getProdukty() {
-        return produkty;
-    }
 
-    public void setIilosci(int[] ilosci) {
-        this.ilosci = ilosci;
-    }
     public int[] getIlosci() {
         return ilosci;
+    }
+
+    public void setIlosci(int[] ilosci) {
+        this.ilosci = ilosci;
+    }
+
+    public String getDataZamowienia() {
+        return dataZamowienia;
     }
 
     public void setDataZamowienia(String dataZamowienia) {
         this.dataZamowienia = dataZamowienia;
     }
-    public String getDataZamowienia() {
-        return dataZamowienia;
+
+    public String getStatus() {
+        return status;
     }
 
     public void setStatus(String status) {
         this.status = status;
-    }
-    public String getStatus() {
-        return status;
     }
 }
